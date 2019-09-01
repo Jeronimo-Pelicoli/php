@@ -6,7 +6,8 @@ class IndexController
 {
     public function index()
     {
-        echo "Route: / controller: index";
+        echo "Route: / controller: index ";
+        
     }
 
     public function contact()
