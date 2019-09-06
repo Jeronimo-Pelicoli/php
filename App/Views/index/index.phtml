@@ -1,0 +1,7 @@
+Route: / controller: indexController Action: index View: index
+
+<br/>
+
+<?php foreach($this->view->cars as $car): ?>
+    <p><?= $car ?></p>
+<?php endforeach ?>
