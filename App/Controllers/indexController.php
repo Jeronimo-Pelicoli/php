@@ -16,7 +16,8 @@ class IndexController extends Action
 
     public function contact()
     {
-        $this->view->cars = array("Mustang", "Ferrari");
+        $client = Container::getModel("Client");
+        $this->view->clients = $client->find(2);
         $this->render("contact");
     }
 }
